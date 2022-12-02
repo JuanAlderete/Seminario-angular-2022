@@ -1,6 +1,20 @@
 <h1 class="container mt-4">CARRITO</h1>
-<ul>
+<!-- <ul>
     <li *ngFor="let shoe of (cartList$ | async)">
         {{shoe.name}}: {{shoe.quantity}}
     </li>
-</ul>
+</ul> -->
+
+<div class="container" *ngFor="let shoe of (cartList$ | async)">
+    <div class="row align-items-center">
+        <div class="col"><img class="img-fluid" src="{{shoe.image}}"></div>
+        <div class="col">
+            <div class="row text-muted">{{shoe.style}}</div>
+            <div class="row">{{shoe.name}}</div>
+        </div>
+        <div class="col">
+            <p>Cantidad: {{shoe.quantity}}</p>
+        </div>
+        <div class="col">&euro; {{shoe.price}} <span class="close">&#10005;</span></div>
+    </div>
+</div>

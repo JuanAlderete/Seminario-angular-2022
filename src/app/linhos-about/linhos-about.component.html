@@ -1,6 +1,77 @@
-<p>linhos-about works!</p>
+<section class="pt-5 pb-5 mt-0 align-items-center d-flex bg-dark" style="min-height: 100vh; background-size: cover; background-image: url(https://hector.me/images/wavey/hero-art-alt.jpg);">
 
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis ullam impedit, ducimus veritatis tempore magni fugiat, debitis, autem distinctio illum cupiditate velit doloremque quia quam. Nam accusamus nobis placeat facere.
-</p>
+    <div class="container">
+        <div class=" text-center mt-5 text-white">
+            <h1>Contactanos</h1>
+        </div>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, animi perferendis. Nostrum, distinctio voluptas repudiandae voluptatibus sint dicta dolor? Ipsum voluptatum quaerat cupiditate odio nisi corporis est nulla provident accusamus.</p>
+        <div class="row ">
+        <div class="col-lg-7 mx-auto">
+            <div class="card mt-2 mx-auto p-4 bg-light">
+                <div class="card-body bg-light">
+        
+                <div class = "container">
+                    <form id="contact-form" role="form">
+                        <div class="controls">
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_name">Nombre</label>
+                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Introduzca su nombre" required="required" data-error="Nombre es requerido.">
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_lastname">Apellido</label>
+                                        <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Introduzca su apellido" required="required" data-error="Apellido es requerido.">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_email">Email</label>
+                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Introduzca su email" required="required" data-error="Se requiere un email valido.">
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_need">Cuentenos que necesita</label>
+                                        <select id="form_need" name="need" class="form-control" required="required" data-error="Por favor especifique que necesita">
+                                            <option value="" selected disabled>--Seleccione su problema--</option>
+                                            <option>Solicitar factura por pedido</option>
+                                            <option>Solicitar estado de pedido</option>
+                                            <option>Todavía no he recibido el reembolso</option>
+                                            <option>Otro</option>
+                                        </select>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 mb-3">
+                                    <div class="form-group">
+                                        <label for="form_message">Mensaje</label>
+                                        <textarea id="form_message" name="message" class="form-control" placeholder="Escriba su mensaje aqui." rows="4" required="required" data-error="Por favor, déjenos un mensaje."></textarea>
+                                        </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="submit" class="btn btn-send pt-2 btn-block text-white contact-btn" value="Enviar mensaje" >
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+            <!-- /.8 -->
+
+        </div>
+        <!-- /.row-->
+
+        </div>
+    </div>
+    
+</section>
