@@ -1,0 +1,14 @@
+.login-btn{
+    border: 2px solid;
+    border-image-slice: 1;
+    background: #222;
+    text-decoration: none;
+    transition: all .4s ease;
+    -webkit-background-clip: unset !important;
+    -webkit-text-fill-color: unset !important;
+}
+      
+.login-btn:hover{
+    border: 2px solid #222 !important; 
+    box-shadow: #222 1px 0 10px;
+}

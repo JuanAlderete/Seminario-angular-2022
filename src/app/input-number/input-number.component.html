@@ -1,0 +1,6 @@
+<div class="d-flex">
+    <button class="btn mr-2 text-black flex-shrink-0 input-btn me-2" (click)="downQuantity()">-</button>
+    <!-- <input class="form-control text-center me-2" id="inputQuantity" type="num" value="1" min="0" max="10" style="max-width: 3rem" /> -->
+    <input class="form-control text-center me-2" style="max-width: 3rem" type="text" min="1" [(ngModel)]="quantity" (keyup)="changeQuantity($event)"/>
+    <button class="btn mr-2 text-black flex-shrink-0 me-3 input-btn" (click)="upQuantity()">+</button>
+</div>

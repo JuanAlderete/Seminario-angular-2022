@@ -1,0 +1,6 @@
+<h1 class="container mt-4">CARRITO</h1>
+<ul>
+    <li *ngFor="let shoe of (cartList$ | async)">
+        {{shoe.name}}: {{shoe.quantity}}
+    </li>
+</ul>
